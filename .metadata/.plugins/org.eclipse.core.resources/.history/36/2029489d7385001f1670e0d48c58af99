@@ -1,0 +1,10 @@
+package compte;
+
+public class compte {
+	private int num;
+	private double solde;
+	private personne ti;
+	private double dbm;
+	private double dcm;
+	
+}

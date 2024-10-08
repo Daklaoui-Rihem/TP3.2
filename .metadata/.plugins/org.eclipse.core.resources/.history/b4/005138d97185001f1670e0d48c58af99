@@ -1,0 +1,6 @@
+package compte;
+
+public class compte {
+	private int personne;
+	
+}

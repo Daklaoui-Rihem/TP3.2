@@ -1,0 +1,16 @@
+package compte;
+
+public class test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		personne p1=new personne("Dak","Ryy","Zarzouna");
+		personne p2=new personne("D","Ryry","Benzart");
+		compte c1=new compte(p1);
+		compte c2=new compte(p2);
+		System.out.println(c1);
+		System.out.println(c2);
+		
+	}
+
+}

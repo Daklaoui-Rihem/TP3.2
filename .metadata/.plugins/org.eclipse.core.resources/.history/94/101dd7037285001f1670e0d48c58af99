@@ -1,0 +1,11 @@
+package compte;
+
+public class personne {
+	private String nom;
+	private String prenom;
+	private String adresse;
+	public personne(String n, String p, String a)
+	{
+		
+	}
+}

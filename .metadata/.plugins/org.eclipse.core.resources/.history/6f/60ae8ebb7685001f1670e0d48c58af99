@@ -1,0 +1,55 @@
+package compte;
+
+public class compte {
+	private static int num=0;
+	private double solde;
+	private personne ti;
+	private double dbm;
+	private double dcm;
+	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public double getSolde() {
+		return solde;
+	}
+	public void setSolde(double solde) {
+		this.solde = solde;
+	}
+	public personne getTi() {
+		return ti;
+	}
+	public void setTi(personne ti) {
+		this.ti = ti;
+	}
+	public double getDbm() {
+		return dbm;
+	}
+	public void setDbm(double dbm) {
+		this.dbm = dbm;
+	}
+	public double getDcm() {
+		return dcm;
+	}
+	public void setDcm(double dcm) {
+		this.dcm = dcm;
+	}
+	@Override
+	public String toString() {
+		return "compte [num=" + num + ", solde=" + solde + ", tiulaire=" + ti + ", debit max=" + dbm + ", decouvert max=" + dcm + "]";
+	}
+	public class compte(personne ti)
+	{
+		this.num++;
+		this.ti=ti;
+		this.sold=0;
+		this.
+	}
+	{
+		
+	}
+	
+}

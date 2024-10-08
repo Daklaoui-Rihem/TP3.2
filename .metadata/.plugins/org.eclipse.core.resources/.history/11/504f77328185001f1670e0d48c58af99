@@ -1,0 +1,82 @@
+package compte;
+
+public class compte {
+	private static int n=0;
+	private int num;
+	private double solde;
+	private personne ti;
+	private double dbm;
+	private double dcm;
+	private boolean test;
+	
+	public int getNum() {
+		return num;
+	}
+	public void setNum(int num) {
+		this.num = num;
+	}
+	public double getSolde() {
+		return solde;
+	}
+	public void setSolde(double solde) {
+		this.solde = solde;
+	}
+	public personne getTi() {
+		return ti;
+	}
+	public void setTi(personne ti) {
+		this.ti = ti;
+	}
+	public double getDbm() {
+		return dbm;
+	}
+	public void setDbm(double dbm) {
+		this.dbm = dbm;
+	}
+	public double getDcm() {
+		return dcm;
+	}
+	public void setDcm(double dcm) {
+		this.dcm = dcm;
+	}
+	@Override
+	public String toString() {
+		return "compte [num=" + num + ", solde=" + solde + ", tiulaire=" + ti + ", debit max=" + dbm + ", decouvert max=" + dcm + "]";
+	}
+	public compte(personne ti)
+	{
+		this.n=num++;
+		this.solde=0;
+		this.ti=ti;
+		this.dbm=1000;
+		this.dcm=800;
+	}
+	public compte(personne ti,double dbm,double dcm,double solde)
+	{
+		this.n=num++;
+		this.solde=solde;
+		this.ti=ti;
+		this.dbm=dbm;
+		this.dcm=dcm;
+	}
+	void crediter(double mnt)
+	{
+		if(this.solde>0)
+		{
+			this.solde+=mnt;
+		}
+		
+	}
+	void debiter(double mnt)
+	{
+		if(mnt<this.dbm && this.solde-mnt>this.dcm)
+		{
+			this.solde-=mnt;
+		}
+	}
+	/*boolean estadecouvert()
+	{
+		return 
+	}*/
+	
+}
